@@ -13,6 +13,15 @@ const userSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  borrowDetails: [
+    {
+      book: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "book",
+      },
+      returnDate: Date,
+    },
+  ],
 });
 
 const userModel = new mongoose.model("user", userSchema);

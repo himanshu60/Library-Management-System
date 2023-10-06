@@ -22,15 +22,6 @@ const bookSchema = mongoose.Schema({
     type: Number,
     required: true,
   },
-  borrowDetails: [
-    {
-      user: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "user",
-      },
-      returnDate: Date,
-    },
-  ],
 });
 
 const bookModel = new mongoose.model("book", bookSchema);
