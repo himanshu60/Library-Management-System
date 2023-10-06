@@ -86,7 +86,7 @@ This API manages books in a library. It allows you to add, update, delete, list 
 
 ### Endpoints
 
-#### Add Book
+#### Add Book Details
 
 - **Route:** `POST book/addbook`
 - **Description:** Add a new book to the library.
